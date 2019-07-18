@@ -90,6 +90,79 @@
     src: url('Fonts/Montserrat/italic/Montserrat-ThinItalic.ttf') format('truetype')
 }
 
+/* fonts classes */
+.font-mont-bl {
+    font-family: 'MontserratBlack';
+}
+
+.font-mont-b {
+    font-family: 'MontserratBold';
+}
+
+.font-mont-eb {
+    font-family: 'MontserratExtraBold';
+}
+
+.font-mont-el {
+    font-family: 'MontserratExtraLight';
+}
+
+.font-mont-l {
+    font-family: 'MontserratLight';
+}
+
+.font-mont-m {
+    font-family: 'MontserratMedium';
+}
+
+.font-mont-r {
+    font-family: 'MontserratRegular';
+}
+
+.font-mont-sb {
+    font-family: 'MontserratSemiBold';
+}
+
+.font-mont-t {
+    font-family: 'MontserratThin';
+}
+
+.font-mont-bl-i {
+    font-family: 'MontserratBlackItalic';
+}
+
+.font-mont-b-i {
+    font-family: 'MontserratBoldItalic';
+}
+
+.font-mont-eb-i {
+    font-family: 'MontserratExtraBoldItalic';
+}
+
+.font-mont-el-i {
+    font-family: 'MontserratExtraLightItalic';
+}
+
+.font-mont-l-i {
+    font-family: 'MontserratLightItalic';
+}
+
+.font-mont-m-i {
+    font-family: 'MontserratMediumItalic';
+}
+
+.font-mont-r-i {
+    font-family: 'MontserratRegularItalic';
+}
+
+.font-mont-sb-i {
+    font-family: 'MontserratSemiBoldItalic';
+}
+
+.font-mont-t-i {
+    font-family: 'MontserratThinItalic';
+}
+
 /* common css (index.js level)*/
 * {
     font-family: 'MontserratMedium'
