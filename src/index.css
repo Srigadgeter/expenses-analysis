@@ -1,4 +1,6 @@
-/* fonts */
+/* >>>>> fonts <<<<< */
+
+/* Montserrat */
 @font-face {
     font-family: 'MontserratBlack';
     src: url('Fonts/Montserrat/Montserrat-Black.ttf') format('truetype')
@@ -90,7 +92,22 @@
     src: url('Fonts/Montserrat/italic/Montserrat-ThinItalic.ttf') format('truetype')
 }
 
-/* fonts classes */
+/* Mona */
+@font-face {
+    font-family: 'Mona';
+    src: url('Fonts/Mona/Mona.woff') format('woff'),
+         url('Fonts/Mona/Mona.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MonaBouncy';
+    src: url('Fonts/Mona/Mona-Bouncy.woff') format('woff'),
+         url('Fonts/Mona/Mona-Bouncy.otf') format('opentype');
+}
+
+/* >>>>> fonts classes <<<<< */
+
+/* Montserrat */
 .font-mont-bl {
     font-family: 'MontserratBlack';
 }
@@ -163,7 +180,17 @@
     font-family: 'MontserratThinItalic';
 }
 
-/* common css (index.js level)*/
+/* Mona */
+
+.font-mona {
+    font-family: 'Mona';
+}
+
+.font-mona-bou {
+    font-family: 'MonaBouncy';
+}
+
+/* >>>>> common css (index.js level) <<<<< */
 * {
     font-family: 'MontserratMedium'
 }
