@@ -1,6 +1,6 @@
 import { lazy } from 'react';
 
-const Home = lazy(() => import('../Home'));
+const Home = lazy(() => import('../Home/Home'));
 const Dashboard = lazy(() => import('../Dashboard'));
 // const MonthReportCreate = lazy(() => import('../MonthReportCreateEdit'));
 // const MonthReportView = lazy(() => import('../MonthReportView'));
