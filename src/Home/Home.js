@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
 import { routes } from '../routes/RouteDatas';
+
 import './Home.css';
 
 class Home extends Component {
