@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import Modal from 'react-bootstrap/Modal';
 
 import './Modal.css';
 
@@ -20,7 +20,7 @@ const CustomModal = ({
         onHide={closeModal}
     >
         <Modal.Header>
-            <Modal.Title className="font-mona">
+            <Modal.Title className="gradient-text-4 font-mona">
                 {modalTitle}
             </Modal.Title>
         </Modal.Header>
@@ -32,13 +32,13 @@ const CustomModal = ({
                 modalFooter && 
                 Array.isArray(modalFooter) &&  
                 modalFooter.map((data, index) => (
-                    <Button 
-                        key={`btn${index}`}
-                        variant={data.type ? data.type : null} 
+                    <button 
+                        key={`btn${index}`} 
                         onClick={data.functionality} 
+                        className={`btn-${data.type}`} 
                     >
                         {data.context ? data.context : null}
-                    </Button>
+                    </button>
                 ))
             }
         </Modal.Footer>
