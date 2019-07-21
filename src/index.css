@@ -190,6 +190,22 @@
     font-family: 'MonaBouncy';
 }
 
+/* >>>>> Scrollbar - Common Styling <<<<< */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* >>>>> common css (index.js level) <<<<< */
 * {
     font-family: 'MontserratMedium'
