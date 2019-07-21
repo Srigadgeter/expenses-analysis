@@ -190,8 +190,44 @@
     font-family: 'MonaBouncy';
 }
 
+/* >>>>> Scrollbar - Common Styling <<<<< */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Gradient Text Styles */
+.gradient-text-1 {
+    background-image: radial-gradient( circle farthest-corner at 1.2% 5.3%,  rgba(255,85,166,1) 0%, rgba(255,154,98,1) 100.2% );
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradient-text-2 {
+    background: radial-gradient( circle farthest-corner at 12% 12.5%,  rgba(245,76,100,1) 0%, rgba(247,129,97,1) 90% );
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradient-text-3 {
+    background-image: linear-gradient( 175.9deg,  rgba(70,80,98,1) 7%, rgba(90,104,127,1) 93.8% );
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* >>>>> common css (index.js level) <<<<< */
 * {
+    user-select: none;
     font-family: 'MontserratMedium'
 }
 
