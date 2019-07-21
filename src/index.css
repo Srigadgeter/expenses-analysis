@@ -227,6 +227,7 @@
 
 /* >>>>> common css (index.js level) <<<<< */
 * {
+    user-select: none;
     font-family: 'MontserratMedium'
 }
 
