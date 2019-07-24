@@ -3,10 +3,26 @@ import Modal from 'react-bootstrap/Modal';
 
 import './Modal.css';
 
+const modalHeaderType = [
+    {
+        type: 'create',
+        color: '#00ff0036'
+    },
+    {
+        type: 'update',
+        color: '#0cbdd441'
+    },
+    {
+        type: 'delete',
+        color: '#ff160171'
+    }
+]
+
 const CustomModal = ({
     size,
     children,
     showModal, 
+    modalType,
     closeModal, 
     modalTitle, 
     modalFooter
@@ -19,9 +35,9 @@ const CustomModal = ({
         show={showModal}
         onHide={closeModal}
     >
-        <Modal.Header>
+        <Modal.Header style={{background: modalType ? modalHeaderType.filter(item => item.type === modalType)[0].color : null}}>
             <Modal.Title className="gradient-text-4 font-mona">
-                {modalTitle}
+                {modalTitle.toUpperCase()}
             </Modal.Title>
         </Modal.Header>
         <Modal.Body>
