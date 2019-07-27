@@ -3,9 +3,9 @@ import { withRouter } from 'react-router-dom';
 
 import { routes } from '../routes/RouteDatas';
 
-import './Home.css';
+import './SplashScreen.css';
 
-class Home extends Component {
+class SplashScreen extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.props.history.push(routes.DASHBOARD.path);
@@ -14,11 +14,11 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="home" style={{width: window.innerWidth, height: window.innerHeight}}>
+            <div className="splashScreen" style={{width: window.innerWidth, height: window.innerHeight}}>
                 <span className="project-title font-mona">EXPENSES ANALYSIS</span>
             </div>
         )
     }
 }
 
-export default withRouter(Home);
+export default withRouter(SplashScreen);
