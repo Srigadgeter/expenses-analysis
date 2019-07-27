@@ -8,9 +8,9 @@ const history = createBrowserHistory();
 
 const RouteCreator = (route) => (
     <Route 
+        exact 
         key = {route.path}
         path = {route.path}
-        exact = {route.path === '/'}
         render = {() => (<route.component />)}
     />
 )
