@@ -1,8 +1,11 @@
+// Package File Imports
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 
+// StyleSheet Imports
 import './Modal.css';
 
+// Modal Type Data
 const modalHeaderType = [
     {
         type: 'create',
@@ -18,6 +21,7 @@ const modalHeaderType = [
     }
 ]
 
+// CustomModal Component
 const CustomModal = ({
     size,
     children,
@@ -61,4 +65,5 @@ const CustomModal = ({
     </Modal>
 )
 
+// Export Statement
 export default CustomModal;

@@ -1,10 +1,14 @@
+// Package File Imports
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
+// Project File Imports
 import { routes } from '../routes/RouteDatas';
 
+// StyleSheet Imports
 import './SplashScreen.css';
 
+// SplashScreen Component
 class SplashScreen extends Component {
     componentDidMount() {
         setTimeout(() => {
@@ -21,4 +25,5 @@ class SplashScreen extends Component {
     }
 }
 
+// Export Statement
 export default withRouter(SplashScreen);

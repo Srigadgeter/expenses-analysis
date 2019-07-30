@@ -1,11 +1,15 @@
+// Package File Imports
 import React, { Suspense } from 'react';
 import { Router, Switch, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
+// Project File Imports
 import { routes } from './RouteDatas';
 
+// history variable assignment
 const history = createBrowserHistory();
 
+// RouteCreator Component
 const RouteCreator = (route) => (
     <Route 
         exact 
@@ -15,6 +19,8 @@ const RouteCreator = (route) => (
     />
 )
 
+// Router
+// Routes Component
 const Routes = () => {
     let routeDatas = Object.values(routes);
 
@@ -29,4 +35,5 @@ const Routes = () => {
     )
 }
 
+// Export Statement
 export default Routes;
