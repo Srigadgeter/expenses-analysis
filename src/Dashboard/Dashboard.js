@@ -146,7 +146,7 @@ class Dashboard extends Component {
                         <Row>
                             <Col>
                                 <span className="field-names">
-                                    Select a Year
+                                    Enter the Year
                                 </span>
                             </Col>
                             <Col>
