@@ -1,15 +1,18 @@
+// Package File Imports
 import { lazy } from 'react';
 
-const Home = lazy(() => import('../Home/Home'));
+// Component Imports
+const SplashScreen = lazy(() => import('../SplashScreen/SplashScreen'));
 const Dashboard = lazy(() => import('../Dashboard/Dashboard'));
 // const MonthReportCreate = lazy(() => import('../MonthReportCreateEdit'));
 // const MonthReportView = lazy(() => import('../MonthReportView'));
 // const MonthReportEdit = lazy(() => import('../MonthReportCreateEdit'));
 
+// Route Datas
 export const routes = {
-  HOME: {
+  SPLASHSCREEN: {
     path: '/',
-    component: Home
+    component: SplashScreen
   },
   DASHBOARD: {
     path: '/dashboard',

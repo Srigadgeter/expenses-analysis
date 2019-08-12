@@ -19,7 +19,6 @@
 
 .dashboard {
     padding: 10px;
-    min-height: calc(100vh - 20px);
     background-image: radial-gradient( circle farthest-corner at 12% 12.5%,  rgba(245,76,100,1) 0%, rgba(247,129,97,1) 90% );
 }
 
@@ -30,7 +29,6 @@
 
 .dashboard-cards-container {
     display: flex;
-    overflow-y: auto;
     flex-flow: row wrap;
     align-content: flex-start;
     padding-top: 10px;
@@ -91,18 +89,16 @@
 }
 
 .card-title {
-    bottom: 10%;
+    bottom: 15%;
     position: absolute;
-    left: calc(50% - 37px);
+    margin-bottom: 0;
+    left: calc(50% - 41px);
 }
 
 .card-title-text {
-    background: radial-gradient( circle farthest-corner at 12% 12.5%,  rgba(245,76,100,1) 0%, rgba(247,129,97,1) 90% );
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     text-align: center;
-    font-size: 23px;
-    width: 74px;
+    font-size: 25px;
+    width: 82px;
 }
 
 .add-new {
@@ -110,20 +106,12 @@
 }
 
 .add-new .card-circle {
+    top: calc(50% - 35px);
     background: rgb(248, 248, 248);
 }
 
 .add-new .card-circle-text {
-    background: radial-gradient( circle farthest-corner at 12% 12.5%,  rgba(245,76,100,1) 0%, rgba(247,129,97,1) 90% );
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     font-size: 40px;
-}
-
-.add-new .card-title-text {
-    background: black;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .add-new:hover .card-circle-text {
@@ -131,6 +119,25 @@
     -o-animation: rotate_animation 1s 1;
     -moz-animation: rotate_animation 1s 1;
     -webkit-animation: rotate_animation 1s 1;
+}
+
+.sample-card {
+    margin: 0;
+}
+
+.container .fields .row {
+    margin-top: 25px;
+}
+
+.dropdown > .btn.btn-default {
+    width: 100%;
+    text-align: left;
+    border: 1px solid #ced4da;
+}
+
+.dropdown > .dropdown-toggle::after {
+    float: right;
+    margin-top: 10px;
 }
 
 /* >>>>> Tablet Screen & Mobile Screen (Portrait & Landscape) CSS <<<<< */
@@ -146,5 +153,9 @@
     .card-spin-circle {
         top: calc(15% - 3px);
         left: calc(50% - 38px);       
+    }
+    .sample-card-container {
+        display: flex;
+        justify-content: center;
     }
 }

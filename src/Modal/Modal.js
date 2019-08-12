@@ -1,12 +1,32 @@
+// Package File Imports
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 
+// StyleSheet Imports
 import './Modal.css';
 
+// Modal Type Data
+const modalHeaderType = [
+    {
+        type: 'create',
+        color: '#00ff0036'
+    },
+    {
+        type: 'update',
+        color: '#0cbdd441'
+    },
+    {
+        type: 'delete',
+        color: '#ff160171'
+    }
+]
+
+// CustomModal Component
 const CustomModal = ({
     size,
     children,
     showModal, 
+    modalType,
     closeModal, 
     modalTitle, 
     modalFooter
@@ -19,9 +39,9 @@ const CustomModal = ({
         show={showModal}
         onHide={closeModal}
     >
-        <Modal.Header>
+        <Modal.Header style={{background: modalType ? modalHeaderType.filter(item => item.type === modalType)[0].color : null}}>
             <Modal.Title className="gradient-text-4 font-mona">
-                {modalTitle}
+                {modalTitle.toUpperCase()}
             </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -45,4 +65,5 @@ const CustomModal = ({
     </Modal>
 )
 
+// Export Statement
 export default CustomModal;

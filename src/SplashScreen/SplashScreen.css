@@ -1,4 +1,4 @@
-/* >>>>> Home <<<<< */
+/* >>>>> SplashScreen <<<<< */
 @keyframes project_title_animation {
     0% {
         opacity: 0;
@@ -28,7 +28,7 @@
     }
 }
 
-.home {
+.splashScreen {
     display: flex;
     align-items: center;
     flex-direction: column;

@@ -1,8 +1,13 @@
+// Package File Imports
 import React from 'react';
 
+// Project File Imports
 import Routes from './routes/Routes';
+
+// StyleSheet Imports
 import './App.css';
 
+// App Component
 function App() {
   return (
     <div className="App">
@@ -11,4 +16,5 @@ function App() {
   );
 }
 
+// Export Statement
 export default App;
