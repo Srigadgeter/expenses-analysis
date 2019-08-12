@@ -19,6 +19,7 @@ const ErrorMessages = [
     'Month should be selected',
     'Year should be numbers only',
     'Year should not starts with 0',
+    'Couldn\'t make Future Analysis',
     'Length of the year field should be 4'
 ];
 
@@ -40,18 +41,26 @@ class Dashboard extends Component {
 
     // Modal Close Handler
     closeAddNewModal = () => {
-        this.setState({ showModal: false });
+        this.setState({
+            year: '',
+            month: '',
+            errorMsg: '',
+            showModal: false,
+            showAlert: false
+        });
     }
 
     // Year Input Handler
     handleYearChanged = e => {
         let year = e.target.value;
+        let currentYear = new Date().getFullYear();
 
         // Year Field OnChange Validation
         let errorMsg = !year ? ErrorMessages[1] : 
-                        year.length !== 4 ? ErrorMessages[5] : 
+                        year.length !== 4 ? ErrorMessages[6] : 
                         !(/^\d{4}$/.test(year)) ? ErrorMessages[3] : 
-                        !(/^[1-9]/.test(year)) ? ErrorMessages[4] : '';
+                        !(/^[1-9]/.test(year)) ? ErrorMessages[4] : 
+                        year > currentYear ? ErrorMessages[5] : '';
         errorMsg ?
             this.setState({
                 errorMsg,
@@ -104,8 +113,9 @@ class Dashboard extends Component {
                 data: {}, 
                 year: '', 
                 month: '', 
+                errorMsg: '',
                 showModal: false,
-                errorMsg: ''
+                showAlert: false
             });
         }
     }
